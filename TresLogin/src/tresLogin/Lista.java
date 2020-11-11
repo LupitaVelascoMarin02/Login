@@ -110,29 +110,7 @@ public class Lista {
 		
 	}
 	
-	public boolean validarUsuario(String usuario) {
-		Nodo ac = new Nodo();
-		ac = uno;
-		boolean enco = false;
-		while(ac!=null && enco == false) {
-			
-			if(ac.usuario.equals(usuario)) {
-				
-				enco = true;
-				
-			}else {
-				
-				enco = false;
-				
-			}
-			
-			ac = ac.siguiente;
-			
-		}
-		
-		return enco;
-		
-	}
+
 	
 	public boolean addatos(String usuario) {
 		String nombre = "";
@@ -205,6 +183,29 @@ public class Lista {
 			ac = ac.siguiente;
 			
 		}
+	}
+	public boolean validarUsuario(String usuario) {
+		Nodo ac = new Nodo();
+		ac = uno;
+		boolean enco = false;
+		while(ac!=null && enco == false) {
+			
+			if(ac.usuario.equals(usuario)) {
+				
+				enco = true;
+				
+			}else {
+				
+				enco = false;
+				
+			}
+			
+			ac = ac.siguiente;
+			
+		}
+		
+		return enco;
+		
 	}
 }
 

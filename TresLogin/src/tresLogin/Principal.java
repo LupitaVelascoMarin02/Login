@@ -34,7 +34,6 @@ public class Principal {
 				menu = JOptionPane.showInputDialog("Menu de opciones:"
 						+ "\n1. Login"
 						+ "\n2. Registro"
-						+ "\n3. Salir"
 						+ "\nSeleccione su opcion deseada:");
 				
 			}
@@ -74,7 +73,7 @@ public class Principal {
 							
 						}else {
 							
-							loginFallido = JOptionPane.showConfirmDialog (null, "Usuario y/o contraseña incorrectos\nIntente Nuevamente","Usuario y/o contraseña incorrectos",dialogButton);
+							loginFallido = JOptionPane.showConfirmDialog (null, "Usuario o contraseña incorrectos\nIntente Nuevamente","Usuario y/o contraseña incorrectos",dialogButton);
 							
 						}
 						
@@ -104,12 +103,8 @@ public class Principal {
 						
 						break;
 						
+						
 					case 3:
-						JOptionPane.showMessageDialog(null, "Cerrando...");
-						
-						break;
-						
-					case 4:
 						Lista.mostrarLista();
 						
 						break;
@@ -121,7 +116,7 @@ public class Principal {
 				
 			}
 			
-		}while(op!=3);
+		}while(op!=2);
 		
 	}
 	

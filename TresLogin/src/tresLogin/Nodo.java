@@ -9,10 +9,12 @@ public class Nodo {
 	
 	String nombre;
 	
+	Nodo siguiente;
+	
 	int edad;
 	
 	boolean uno;
 	
-	Nodo siguiente;
+	
 }
 
